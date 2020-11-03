@@ -23,5 +23,5 @@ $info.Retrieve("AuthenticationRealm")
 $info.Retrieve("ValidContentEncryptionCertificates")
 $clientContext.ExecuteQuery()
 
-$info |fl
+$info | fl
  
