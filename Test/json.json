@@ -1,0 +1,531 @@
+{
+    "Changes": [
+      {
+        "Version": 1,
+        "Type": "Insert",
+        "CorrelationId": "0bccfa32-840f-4827-bd2f-14ea8602ffc7",
+        "IndexTargetStates": {
+          "farm:OfficeGraph": {
+            "MessageReference": {
+              "MessageId": "c277584c-d8f0-4db1-8041-5c7e39bb298c(slash)High",
+              "PopReceipt": "AgAAAAMAAAAAAAAArTZ6dri31gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-10T23:13:14.3734612Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-10T23:13:14.8150877Z",
+            "Result": {
+              "ResultCode": "Ok",
+              "IndexStatusCode": "000|Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-10T23:13:14.3734612Z",
+            "OfficeGraphRequestId": "a7035ff8-8588-44c3-9f51-e361bd77f567",
+            "OfficeGraphBackendServer": "ME1PR01MB2033",
+            "Priority": "High",
+            "FirstTimeOk": "2020-11-10T23:13:14.8150877",
+            "FirstTimeCommitted": "2020-11-10T23:13:14.8150877",
+            "OfficeGraphIsMappedByFlexibleSchema": true,
+            "OfficeGraphSpoolsFabric": "ScsWorker"
+          },
+          "const:aus200sf1(slash)i9177C": {
+            "MessageReference": {
+              "MessageId": "d1ed6702-eac1-47f9-bbaf-cf324ead630d(slash)High",
+              "PopReceipt": "AgAAAAMAAAAAAAAAwEB7dri31gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-10T23:13:14.4139251Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-10T23:13:32.5003454Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-10T23:13:14.4139251Z",
+            "Priority": "High",
+            "FirstTimeOk": "2020-11-10T23:13:32.5003454",
+            "FirstTimeCommitted": "2020-11-10T23:13:32.5003454"
+          },
+          "const:aus200sf2(slash)i91A31": {
+            "MessageReference": {
+              "MessageId": "d25ba3ee-c9fa-47ad-9a98-ab8e6a946ced(slash)High",
+              "PopReceipt": "AgAAAAMAAAAAAAAASfV(slash)dri31gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-10T23:13:14.5925549Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-10T23:13:31.3224341Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-10T23:13:14.5925549Z",
+            "Priority": "High",
+            "FirstTimeOk": "2020-11-10T23:13:31.3224341",
+            "FirstTimeCommitted": "2020-11-10T23:13:31.3224341"
+          },
+          "analytics": {
+            "MessageReference": {
+              "MessageId": "f515824c-a61a-4ce2-a4f1-1efb19ed35f9(slash)High",
+              "PopReceipt": "AgAAAAMAAAAAAAAAR3h(slash)dri31gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-10T23:13:14.9628139Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-10T23:13:15.1709633Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-10T23:13:14.9628139Z",
+            "Priority": "High",
+            "FirstTimeOk": "2020-11-10T23:13:15.1709633",
+            "FirstTimeCommitted": "2020-11-10T23:13:15.1709633"
+          }
+        },
+        "ReceivedTime": "2020-11-10T23:13:14.2176122Z",
+        "ContentSize": 14869,
+        "BlobVersion": 1,
+        "BlobLocation": {
+          "AccountName": "fscsausp8blob3",
+          "ShardNumber": 3,
+          "ShardCount": 4,
+          "UsingVersionedAddress": true
+        },
+        "BlobChecksum": -223499096690798834,
+        "BlobLength": 3400,
+        "CrawlerLastModifiedTime": "2020-11-10T23:12:37Z",
+        "CrawlerSubmissionTime": "2020-11-10T23:13:14.0447545Z",
+        "IndexingEndpoint": "Internal",
+        "Privacy": "NonPrivate",
+        "ContentChecksum": -7012056702740456141,
+        "PrivacyIndicatorStatus": {
+          "PrivacyIndicatorType": "AceBased",
+          "TimeStamp": "2020-11-10T23:13:14.317328"
+        },
+        "FrontendVersion": "VroomId",
+        "CrawlerEventId": "b27ae111-916a-4ed0-82f1-6414eb367136_193429332",
+        "CrawlerEventType": "Add",
+        "FreshnessPriority": 1,
+        "EventObjectType": "Item"
+      },
+      {
+        "Version": 3,
+        "Type": "Insert",
+        "UG": "metadata",
+        "CorrelationId": "ffbc5b1b-8ea2-42c1-9aff-51f0a4ac221d",
+        "IndexTargetStates": {
+          "farm:OfficeGraph": {
+            "MessageReference": {
+              "MessageId": "265a27ae-b57e-49bc-8a3c-e0ab7604672a(slash)High",
+              "PopReceipt": "AgAAAAMAAAAAAAAA9g7K8(slash)631gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-11T07:37:49.3795118Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T07:37:52.7532547Z",
+            "Result": {
+              "ResultCode": "Ok",
+              "IndexStatusCode": "000|Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-11T07:37:49.3795118Z",
+            "OfficeGraphRequestId": "8239a8a2-b488-41a1-8c97-1f16202c88cc",
+            "OfficeGraphBackendServer": "ME1PR01MB2033",
+            "Priority": "High",
+            "FirstTimeOk": "2020-11-11T07:37:52.7532547",
+            "FirstTimeCommitted": "2020-11-11T07:37:52.7532547",
+            "OfficeGraphIsMappedByFlexibleSchema": true,
+            "OfficeGraphSpoolsFabric": "ScsWorker"
+          },
+          "const:aus200sf1(slash)i9177C": {
+            "MessageReference": {
+              "MessageId": "7f16eed0-de85-4be6-97db-1a8309df4b62(slash)High",
+              "PopReceipt": "AgAAAAMAAAAAAAAADJcq8(slash)631gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-11T07:37:48.3685021Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T07:39:52.3994159Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-11T07:37:48.3685021Z",
+            "Priority": "High",
+            "FirstTimeOk": "2020-11-11T07:39:52.3994159",
+            "FirstTimeCommitted": "2020-11-11T07:39:52.3994159"
+          },
+          "const:aus200sf2(slash)i91A31": {
+            "MessageReference": {
+              "MessageId": "b17e5df8-a1ee-4cf5-97a7-475cca6249b4(slash)High",
+              "PopReceipt": "AgAAAAMAAAAAAAAAmFiq9f631gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-11T07:37:52.5876379Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T07:39:18.9774059Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-11T07:37:52.5876379Z",
+            "Priority": "High",
+            "FirstTimeOk": "2020-11-11T07:39:18.9774059",
+            "FirstTimeCommitted": "2020-11-11T07:39:18.9774059"
+          }
+        },
+        "ReceivedTime": "2020-11-11T07:37:48.0707979Z",
+        "ContentSize": 14869,
+        "BlobVersion": 3,
+        "BlobLocation": {
+          "AccountName": "fscsausp8blob3",
+          "ShardNumber": 3,
+          "ShardCount": 4,
+          "UsingVersionedAddress": true
+        },
+        "BlobChecksum": -1415739325720601447,
+        "BlobLength": 3416,
+        "CrawlerSubmissionTime": "2020-11-11T07:37:47.9221474Z",
+        "IndexingEndpoint": "Internal",
+        "Privacy": "NonPrivate",
+        "ContentChecksum": 1016682572259279433,
+        "PrivacyIndicatorStatus": {
+          "PrivacyIndicatorType": "AceBased",
+          "TimeStamp": "2020-11-11T07:37:48.1236028"
+        },
+        "FrontendVersion": "VroomId",
+        "CrawlerEventId": "b27ae111-916a-4ed0-82f1-6414eb367136_0",
+        "CrawlerEventType": "NotHandled",
+        "FreshnessPriority": 1,
+        "EventObjectType": "UnIdentified"
+      },
+      {
+        "Version": 4,
+        "Type": "Update",
+        "UG": "substrate",
+        "CorrelationId": "fdc98343-9a40-48dc-8776-3b274c186ac1",
+        "IndexTargetStates": {
+          "farm:OfficeGraph": {
+            "ReadFromQueueFirstTime": "1970-01-01T00:00:00Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T08:00:44.2078626Z",
+            "Result": {
+              "ResultCode": "Unsupported",
+              "FailureReason": "Update of type substrate not supported for OfficeGraph"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "1970-01-01T00:00:00Z",
+            "Priority": "Analytics"
+          },
+          "const:aus200sf1(slash)i9177C": {
+            "MessageReference": {
+              "MessageId": "b5567b33-e9c9-4a9f-a0e8-f567ad4e02cb(slash)Analytics",
+              "PopReceipt": "AgAAAAMAAAAAAAAAWwa9XwK41gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-11T08:02:19.0421288Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T08:02:29.5902117Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-11T08:02:19.0421288Z",
+            "Priority": "Analytics",
+            "FirstTimeOk": "2020-11-11T08:02:29.5902117",
+            "FirstTimeCommitted": "2020-11-11T08:02:29.5902117"
+          },
+          "const:aus200sf2(slash)i91A31": {
+            "MessageReference": {
+              "MessageId": "852f39ff-81f8-46e3-881a-5f1926203458(slash)Analytics",
+              "PopReceipt": "AgAAAAMAAAAAAAAAASbGMQK41gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-11T08:01:01.9171676Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T08:02:56.010649Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-11T08:01:01.9171676Z",
+            "Priority": "Analytics",
+            "FirstTimeOk": "2020-11-11T08:02:56.010649",
+            "FirstTimeCommitted": "2020-11-11T08:02:56.010649"
+          }
+        },
+        "ReceivedTime": "2020-11-11T08:00:44.1410283Z",
+        "ContentSize": 367,
+        "BlobVersion": 4,
+        "BlobLocation": {
+          "AccountName": "fscsausp8blob3",
+          "ShardNumber": 3,
+          "ShardCount": 4,
+          "UsingVersionedAddress": true
+        },
+        "BlobChecksum": -1853771871690897529,
+        "BlobLength": 312,
+        "IndexingEndpoint": "Internal",
+        "Privacy": "NotSet",
+        "ContentChecksum": -6531983693843471455,
+        "PrivacyIndicatorStatus": {
+          "PrivacyIndicatorType": "AceBased",
+          "TimeStamp": "2020-11-11T08:00:44.2078236"
+        },
+        "FrontendVersion": "VroomId",
+        "HasNoContentContainer": true
+      },
+      {
+        "Version": 5,
+        "Type": "Insert",
+        "UG": "metadata",
+        "CorrelationId": "35612f8a-84ff-44d0-a84c-15f90937b38e",
+        "IndexTargetStates": {
+          "farm:OfficeGraph": {
+            "ReadFromQueueFirstTime": "1970-01-01T00:00:00Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T23:36:20.1290748Z",
+            "Result": {
+              "ResultCode": "PermanentError",
+              "FailureReason": "Skipped",
+              "IndexStatusCode": "SCS|Skipped"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "1970-01-01T00:00:00Z",
+            "Priority": "Low"
+          },
+          "const:aus200sf1(slash)i9177C": {
+            "MessageReference": {
+              "MessageId": "2dcc1f25-fc98-44e9-a07f-22aaf9e51838(slash)Low",
+              "PopReceipt": "AgAAAAMAAAAAAAAAPb70UzC41gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-11T13:31:16.1183948Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T13:32:07.5639636Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-11T13:31:16.1183948Z",
+            "Priority": "Low",
+            "FirstTimeOk": "2020-11-11T13:32:07.5639636",
+            "FirstTimeCommitted": "2020-11-11T13:32:07.5639636"
+          },
+          "const:aus200sf2(slash)i91A31": {
+            "MessageReference": {
+              "MessageId": "1872e0ca-d60e-46cb-8309-700e55b54182(slash)Low",
+              "PopReceipt": "AgAAAAMAAAAAAAAAZe0YZDC41gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-11T13:31:43.1876376Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T13:33:14.6029442Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-11T13:31:43.1876376Z",
+            "Priority": "Low",
+            "FirstTimeOk": "2020-11-11T13:33:14.6029442",
+            "FirstTimeCommitted": "2020-11-11T13:33:14.6029442"
+          }
+        },
+        "ReceivedTime": "2020-11-11T13:31:10.7852531Z",
+        "ContentSize": 14869,
+        "BlobVersion": 5,
+        "BlobLocation": {
+          "AccountName": "fscsausp8blob3",
+          "ShardNumber": 3,
+          "ShardCount": 4,
+          "UsingVersionedAddress": true
+        },
+        "BlobChecksum": 9156420522500629265,
+        "BlobLength": 3416,
+        "CrawlerSubmissionTime": "2020-11-11T13:31:10.6090911Z",
+        "IndexingEndpoint": "Internal",
+        "Privacy": "NonPrivate",
+        "ContentChecksum": -3587988862536946303,
+        "PrivacyIndicatorStatus": {
+          "PrivacyIndicatorType": "AceBased",
+          "TimeStamp": "2020-11-11T13:31:10.8783172"
+        },
+        "FrontendVersion": "VroomId",
+        "CrawlerEventId": "b27ae111-916a-4ed0-82f1-6414eb367136_193495429",
+        "CrawlerEventType": "Update",
+        "FreshnessPriority": 3,
+        "EventObjectType": "List"
+      },
+      {
+        "Version": 6,
+        "Type": "Update",
+        "UG": "link",
+        "CorrelationId": "119e3410-a44d-4de0-8b49-875bdb172a8e",
+        "IndexTargetStates": {
+          "farm:OfficeGraph": {
+            "ReadFromQueueFirstTime": "1970-01-01T00:00:00Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T22:02:48.3798377Z",
+            "Result": {
+              "ResultCode": "Unsupported",
+              "FailureReason": "Update of type link not supported for OfficeGraph"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "1970-01-01T00:00:00Z",
+            "Priority": "Analytics"
+          },
+          "const:aus200sf1(slash)i9177C": {
+            "MessageReference": {
+              "MessageId": "37389329-7b29-4392-bf92-0788c2ff2979(slash)Analytics",
+              "PopReceipt": "AgAAAAMAAAAAAAAA65dt03e41gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-11T22:03:04.265539Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T22:03:13.9044135Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-11T22:03:04.265539Z",
+            "Priority": "Analytics",
+            "FirstTimeOk": "2020-11-11T22:03:13.9044135",
+            "FirstTimeCommitted": "2020-11-11T22:03:13.9044135"
+          },
+          "const:aus200sf2(slash)i91A31": {
+            "MessageReference": {
+              "MessageId": "667a8fd9-6059-44cf-851f-33b75fa53f22(slash)Analytics",
+              "PopReceipt": "AgAAAAMAAAAAAAAAx3cmz3e41gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-11T22:02:57.0363327Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T22:03:48.4409724Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-11T22:02:57.0363327Z",
+            "Priority": "Analytics",
+            "FirstTimeOk": "2020-11-11T22:03:48.4409724",
+            "FirstTimeCommitted": "2020-11-11T22:03:48.4409724"
+          }
+        },
+        "ReceivedTime": "2020-11-11T22:02:48.3164598Z",
+        "ContentSize": 4741,
+        "BlobVersion": 6,
+        "BlobLocation": {
+          "AccountName": "fscsausp8blob3",
+          "ShardNumber": 3,
+          "ShardCount": 4,
+          "UsingVersionedAddress": true
+        },
+        "BlobChecksum": -258280622701129611,
+        "BlobLength": 440,
+        "IndexingEndpoint": "Internal",
+        "Privacy": "NotSet",
+        "PrivacyIndicatorStatus": {
+          "PrivacyIndicatorType": "AceBased",
+          "TimeStamp": "2020-11-11T22:02:48.3797787"
+        }
+      },
+      {
+        "Version": 7,
+        "Type": "Insert",
+        "UG": "metadata",
+        "CorrelationId": "e28f9ea1-e3eb-487a-803e-e655de837ab1",
+        "IndexTargetStates": {
+          "farm:OfficeGraph": {
+            "MessageReference": {
+              "MessageId": "d64ff060-ab73-470d-b1bb-04559715ea4a(slash)Medium",
+              "PopReceipt": "AgAAAAMAAAAAAAAAINzN2oS41gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-11T23:36:20.1291799Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T23:36:28.0956281Z",
+            "Result": {
+              "ResultCode": "Ok",
+              "IndexStatusCode": "000|Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-11T23:36:20.1291799Z",
+            "OfficeGraphRequestId": "a1b2b08f-3e42-4935-be36-e2e20f18f98c",
+            "OfficeGraphBackendServer": "ME1PR01MB2033",
+            "Priority": "Medium",
+            "FirstTimeOk": "2020-11-11T23:36:28.0956281",
+            "FirstTimeCommitted": "2020-11-11T23:36:28.0956281",
+            "OfficeGraphIsMappedByFlexibleSchema": true,
+            "OfficeGraphSpoolsFabric": "ScsWorker"
+          },
+          "const:aus200sf1(slash)i9177C": {
+            "MessageReference": {
+              "MessageId": "36a50923-5907-443d-8377-0798a3f2d764(slash)Medium",
+              "PopReceipt": "AgAAAAMAAAAAAAAA+1Yx(slash)IS41gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-11T23:37:16.1782129Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T23:38:19.2399931Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-11T23:37:16.1782129Z",
+            "Priority": "Medium",
+            "FirstTimeOk": "2020-11-11T23:38:19.2399931",
+            "FirstTimeCommitted": "2020-11-11T23:38:19.2399931"
+          },
+          "const:aus200sf2(slash)i91A31": {
+            "MessageReference": {
+              "MessageId": "b053f00d-c44f-4203-86e1-5a475417e5b3(slash)Medium",
+              "PopReceipt": "AgAAAAMAAAAAAAAAMHPf5YS41gE="
+            },
+            "ReadFromQueueFirstTime": "2020-11-11T23:36:38.6226343Z",
+            "RetryCount": 0,
+            "ThrottledCount": 0,
+            "IndexCompletedTime": "2020-11-11T23:38:46.621601Z",
+            "Result": {
+              "ResultCode": "Ok"
+            },
+            "RefeedTime": "1970-01-01T00:00:00Z",
+            "ReadFromQueue": "2020-11-11T23:36:38.6226343Z",
+            "Priority": "Medium",
+            "FirstTimeOk": "2020-11-11T23:38:46.621601",
+            "FirstTimeCommitted": "2020-11-11T23:38:46.621601"
+          }
+        },
+        "ReceivedTime": "2020-11-11T23:36:07.3473544Z",
+        "ContentSize": 14869,
+        "BlobVersion": 7,
+        "BlobLocation": {
+          "AccountName": "fscsausp8blob3",
+          "ShardNumber": 3,
+          "ShardCount": 4,
+          "UsingVersionedAddress": true
+        },
+        "BlobChecksum": 1664861699463012598,
+        "BlobLength": 3416,
+        "CrawlerLastModifiedTime": "2020-11-11T23:36:00Z",
+        "CrawlerSubmissionTime": "2020-11-11T23:36:07.2276204Z",
+        "IndexingEndpoint": "Internal",
+        "Privacy": "NonPrivate",
+        "ContentChecksum": 9105434457587146705,
+        "PrivacyIndicatorStatus": {
+          "PrivacyIndicatorType": "AceBased",
+          "TimeStamp": "2020-11-11T23:36:07.4503562"
+        },
+        "FrontendVersion": "VroomId",
+        "CrawlerEventId": "b27ae111-916a-4ed0-82f1-6414eb367136_193682193",
+        "CrawlerEventType": "SystemUpdate",
+        "FreshnessPriority": 2,
+        "EventObjectType": "Item"
+      }
+    ],
+    "AffectedByBucketMoveHardDeleteIncident": -1,
+    "IsCorrupted": false
+  }
