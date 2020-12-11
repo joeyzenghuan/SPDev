@@ -1,15 +1,14 @@
-
 #Load SharePoint CSOM Assemblies
 Add-Type -Path "C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.Client.dll"
 Add-Type -Path "C:\Program Files\Common Files\Microsoft Shared\Web Server Extensions\16\ISAPI\Microsoft.SharePoint.Client.Runtime.dll"
- 
+ 
 #Function to Get Folder Permissions
 Function Get-SPOFolderPermission($Folder) {
     Try {
                
         #Check if Folder has unique permissions
         $Folder.ListItemAllFields.Retrieve("HasUniqueRoleAssignments")
-        $Ctx.ExecuteQuery()  
+        $Ctx.ExecuteQuery()  
                 
         if ($Folder.ListItemAllFields.HasUniqueRoleAssignments -eq $true) {
             Write-host -ForegroundColor Red "Folder has unique Permissions!" 
@@ -17,23 +16,23 @@ Function Get-SPOFolderPermission($Folder) {
             $RoleAssignments = $Folder.ListItemAllFields.RoleAssignments
             $Ctx.Load($RoleAssignments)
             $Ctx.ExecuteQuery()
- 
+
             Foreach ($RoleAssignment in $RoleAssignments) { 
 
                 $Ctx.Load($RoleAssignment.Member)
                 $Ctx.executeQuery()
- 
+ 
                 # $RoleAssignment.Member | gm
                 #Get the User Type
                 $PermissionType = $RoleAssignment.Member.PrincipalType
- 
+ 
                 #Get the Permission Levels assigned
                 $Ctx.Load($RoleAssignment.RoleDefinitionBindings)
                 $Ctx.ExecuteQuery()
                 $PermissionLevels = ($RoleAssignment.RoleDefinitionBindings | Select -ExpandProperty Name) -join ","
-             
+             
                 #Get the User/Group Name
-                #             $Name = $RoleAssignment.Member.Title # $RoleAssignment.Member.LoginName
+                #             $Name = $RoleAssignment.Member.Title # $RoleAssignment.Member.LoginName
                 $LoginName = $RoleAssignment.Member.LoginName
 
                 if ($RoleAssignment.Member.PrincipalType -eq "SharePointGroup") { 
@@ -42,7 +41,7 @@ Function Get-SPOFolderPermission($Folder) {
                     Write-Host -f Green "SharePointGroup:"  $LoginName
                
 
-                    $group = $Ctx.Web.SiteGroups.GetByName($RoleAssignment.Member.Title)     
+                    $group = $Ctx.Web.SiteGroups.GetByName($RoleAssignment.Member.Title)     
                     $Ctx.Load($group) 
                     $users = $group.Users 
                     $Ctx.Load($users) 
@@ -51,7 +50,7 @@ Function Get-SPOFolderPermission($Folder) {
                     Write-Host -f Green "Group Members:"
                     foreach ($user in $users) { 
 
-                        write-host -f DarkGray $user.LoginName + $user.Title                  
+                        write-host -f DarkGray $user.LoginName + $user.Title                  
                     } 
                 }
                 else {
@@ -135,33 +134,31 @@ function Get-AllFoldersInList($List) {
 
 
 #Set Config Parameters
-$SiteURL = "https://m365x502029.sharepoint.com/sites/AB"
+$SiteURL = "https://m365x502029.sharepoint.com/sites/modernTeamSite"
 # $FolderRelativeURL = "/sites/modernTeamSite2/Shared Documents/1"
 
 #Get Credentials to connect
 $Cred = Get-Credential
- 
+ 
 #Setup the context
 $Ctx = New-Object Microsoft.SharePoint.Client.ClientContext($SiteURL)
 $Ctx.Credentials = New-Object Microsoft.SharePoint.Client.SharePointOnlineCredentials($Cred.Username, $Cred.Password)
+
+
+Add-Type -Path "C:\Program Files\WindowsPowerShell\Modules\SharePointPnPPowerShellOnline\2.26.1805.1\OfficeDevPnP.Core.dll"
+$AuthenticationManager = new-object OfficeDevPnP.Core.AuthenticationManager
+$Ctx = $AuthenticationManager.GetWebLoginClientContext($SiteURL)
+
+$Ctx.RequestSchemaVersion
 
 #Get the Folder
 # $Folder = $Ctx.Web.GetFolderByServerRelativeUrl($FolderRelativeURL)
 # $Ctx.Load($Folder)
 # $Ctx.ExecuteQuery()
 
-$ListName = "Documents"
+$ListName = "docLib"
 #Get the List
 $List = $Ctx.web.Lists.GetByTitle($ListName)
 $Ctx.Load($List)
 $Ctx.ExecuteQuery()
 Get-AllFoldersInList($List)
-
-
-
-
-
-
-
-
-

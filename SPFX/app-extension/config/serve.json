@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://m365x502029.sharepoint.com/sites/communication_site/SitePages/Home.aspx",
+      "customActions": {
+        "54328ea6-0591-4fbd-aadb-5dc51fd53235": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "Top area of the page 1",
+            "Bottom": "Bottom area of the page 2"
+          }
+        }
+      }
+    },
+    "helloWorld": {
+      "pageUrl": "https://m365x502029.sharepoint.com/sites/communication_site/SitePages/Home.aspx",
+      "customActions": {
+        "54328ea6-0591-4fbd-aadb-5dc51fd53235": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "Top": "Top area of the page 1",
+            "Bottom": "Bottom area of the page 2"
+          }
+        }
+      }
+    }
+  }
+}
