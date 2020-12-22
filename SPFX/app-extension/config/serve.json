@@ -26,6 +26,17 @@
           }
         }
       }
+    },
+    "injectJsFile": {
+      "pageUrl": "https://contoso.sharepoint.com/sites/mySite/SitePages/myPage.aspx",
+      "customActions": {
+        "94e10fa5-5153-46dd-a90d-09b998c083ce": {
+          "location": "ClientSideExtension.ApplicationCustomizer",
+          "properties": {
+            "testMessage": "Test message"
+          }
+        }
+      }
     }
   }
 }

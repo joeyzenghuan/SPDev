@@ -68,7 +68,7 @@ export default class HelloWorldApplicationCustomizer
       if (this.properties) {
         let topString: string = this.properties.Top;
         if (!topString) {
-          topString = "(Top property was not defined.)";
+          topString = "(Top property was not defined. Test)";
         }
 
         if (this._topPlaceholder.domElement) {

@@ -160,32 +160,27 @@ function Get-PermissionFromList($List) {
 $SiteURL = "https://m365x502029.sharepoint.com/sites/modernTeamSite2"
 
 # Login if MFA is required
-# Add-Type -Path "C:\Program Files\WindowsPowerShell\Modules\SharePointPnPPowerShellOnline\2.26.1805.1\OfficeDevPnP.Core.dll"
+Add-Type -Path "C:\Program Files\WindowsPowerShell\Modules\SharePointPnPPowerShellOnline\2.26.1805.1\OfficeDevPnP.Core.dll"
 $AuthenticationManager = new-object OfficeDevPnP.Core.AuthenticationManager
 $Ctx = $AuthenticationManager.GetWebLoginClientContext($SiteURL)
 
 # csv path
-$FileUrl = "C:\Users\zehua\SPDev\get-allperm3.csv"
+$FileUrl = "C:\Users\zehua\SPDev\get-allperm4.csv"
 # csv column names initialization
 "SiteUrl`tLibraryName`tFolderUrl`tUniqueOrNot`tPermissionLevels`tTargetType`tLoginName`tLoginTitle`tMemberLoginName`tMemberTitle" | out-file $FileUrl 
 
-
 "$($SiteURL)`t`t`t`t`t`t`t`t`t`t"  | Out-File $FileUrl -Append 
 
-#Get Lists from the web
-$Ctx.Load($Ctx.Web.Lists)
-$Ctx.executeQuery()
-  
-#Filter Document Libraries from Lists collection
-$Lists = $Ctx.Web.Lists | Where { $_.BaseType -eq "DocumentLibrary" -and $_.Hidden -eq $False }
- 
-#Loop through each document library and Get the Title
-Foreach ($List in $Lists) {
-    Write-Host ""
-    Write-host "Library name:" $List.Title
-    "`t$($List.Title)`t`t`t`t`t`t`t`t`t"  | Out-File $FileUrl -Append 
-    Get-PermissionFromList $List
-}
+# $ListName = "Documents"
+$ListName = "DocLib"
+#Get the List
+$List = $Ctx.web.Lists.GetByTitle($ListName)
+$Ctx.Load($List)
+$Ctx.ExecuteQuery()
+
+Write-host "Library name:" $List.Title
+"`t$($List.Title)`t`t`t`t`t`t`t`t`t"  | Out-File $FileUrl -Append 
+Get-PermissionFromList $List
 
 
 

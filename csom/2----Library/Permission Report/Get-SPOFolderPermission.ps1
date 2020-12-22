@@ -82,7 +82,6 @@ function RecurseSubFolders ($folder) {
         $Ctx.ExecuteQuery()
 
         if ($folder.Folders.Count -eq 0) {
-        
         }
         else {
                 foreach ($subfolder in $folder.Folders) {

@@ -9,10 +9,19 @@
           "manifest": "./src/extensions/helloWorld/HelloWorldApplicationCustomizer.manifest.json"
         }
       ]
+    },
+    "inject-js-file-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/injectJsFile/InjectJsFileApplicationCustomizer.js",
+          "manifest": "./src/extensions/injectJsFile/InjectJsFileApplicationCustomizer.manifest.json"
+        }
+      ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "HelloWorldApplicationCustomizerStrings": "lib/extensions/helloWorld/loc/{locale}.js"
+    "HelloWorldApplicationCustomizerStrings": "lib/extensions/helloWorld/loc/{locale}.js",
+    "InjectJsFileApplicationCustomizerStrings": "lib/extensions/injectJsFile/loc/{locale}.js"
   }
 }
